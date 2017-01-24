@@ -1,0 +1,51 @@
+// Variables
+@bgcolor: #1557b9;
+
+/* Demo Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #d8e7fd;
+    color: #000;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    margin-top: 40px;
+}
+time {
+    font-family: monospace;
+    span {
+        color: #1510ff;
+        font-weight: bold;
+    }
+}
+.rotate {
+    background: #000;
+    background: @bgcolor;
+    height: 84px;
+    width: 84px;
+    margin: 30px;
+    transform: rotate(45deg);
+}
+.status {
+    background: #ff6e6e;
+    color: #6d0909;
+    /* @TODO uncomment below colors after Grunt run to check auto save */
+    /*background: #56b113;
+    color: #183800;*/
+    margin-top: 4px;
+    padding: 12px;
+    text-align: center;
+}
