@@ -230,3 +230,12 @@ nav a:nth-of-type(5) {
     position: relative;
   }
 }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 400px;
+    max-height: 650px;
+  }
+  .innerContent {
+    margin: 32% auto auto;
+  }
+}
