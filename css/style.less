@@ -54,7 +54,7 @@ header {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #116ca3;
+    background: #0f81c7;
     opacity: 0;
     transform: scale(0);
 }
@@ -101,12 +101,12 @@ header {
     background-repeat: no-repeat;
 }
 .searchBox {
-    margin-top: 25%;
-    height: 40px;
-    background: #4d71d0;
+    margin-top: 5%;
+    height: 30px;
+    background: #096fa1;
     border: none;
     width: 0;
-    border-radius: 3px;
+    border-radius: 15px;
     position: absolute;
     right: 5%;
     z-index: 20;
@@ -190,4 +190,9 @@ nav {
         border-radius: 3px;
         height: 9px;
     }
+}
+@media(orientation:landscape) and (max-width:900px) {
+  .wrapper {
+    position: relative;
+  }
 }
