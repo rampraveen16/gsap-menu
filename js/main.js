@@ -47,7 +47,7 @@ menuBtn.addEventListener('click', function() {
             y: -50
         });
         header_tl_two.reverse();
-        TweenMax.to(searchBox,0.4,{width:'0%',left:'5%',right:'auto',opacity:0});
+        TweenMax.to(searchBox,0.4,{width:'0%',left:'20%',right:'auto',opacity:0});
         menu_btn.classList.remove('closeCir');
         menu_btn.classList.add('open');
     }
@@ -57,7 +57,7 @@ search.addEventListener('click', function() {
     menu_btn.classList.remove('open');
     menu_btn.classList.add('closeCir');
     header_tl_two.play();
-    TweenMax.to(searchBox,0.4,{width:'90%',right:'5%',left:'auto',opacity:1});
+    TweenMax.to(searchBox,0.4,{width:'60%',right:'20%',left:'auto',opacity:1,delay:0.3});
     TweenMax.to(circleTwo, 0.6, {
         scaleX: diameterValue / 78,
         scaleY: diameterValue / 78,
@@ -113,9 +113,13 @@ function headerAnimation() {
     header_tl_two.to(lineOne, 0.1, {
         opacity: 0
     }, "0").to(lineTwo, 0.3, {
-        rotation: 47
+        rotation: 47,
+        width:20+'px',
+        top:6+'px'
     }, "0").to(lineThree, 0.3, {
-        rotation: -47
+        rotation: -47,
+        width:20+'px',
+        top:-6 +'px'
     }, "0");
 }
 
@@ -126,13 +130,14 @@ function completeAnimation() {
         right: 0
     });
 }
+
 function navCir(){
-  TweenMax.staggerTo(cGroup, 0.4, {
+  TweenMax.staggerTo(cGroup, 0.5, {
       scale: 1,
       opacity: 1,
       ease: Bounce.easeOut,
       delay:0.5
-  }, 0.1);
+  }, 0.08);
 }
 function navCirRemove(){
   TweenMax.staggerTo(cGroup, 0, {
@@ -140,6 +145,4 @@ function navCirRemove(){
       opacity: 1
   }, 0);
 }
-function searcBox(){
-
-}
+content_tl.play();

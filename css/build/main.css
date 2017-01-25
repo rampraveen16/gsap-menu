@@ -58,7 +58,7 @@ header {
   height: 100px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background: #116ca3;
+  background: #0f81c7;
   opacity: 0;
   -webkit-transform: scale(0);
      -moz-transform: scale(0);
@@ -109,13 +109,13 @@ header {
   background-repeat: no-repeat;
 }
 .searchBox {
-  margin-top: 25%;
-  height: 40px;
-  background: #4d71d0;
+  margin-top: 5%;
+  height: 30px;
+  background: #096fa1;
   border: none;
   width: 0;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
   position: absolute;
   right: 5%;
   z-index: 20;
@@ -224,4 +224,9 @@ nav a:nth-of-type(5) {
   -webkit-border-radius: 3px;
           border-radius: 3px;
   height: 9px;
+}
+@media (orientation: landscape) and (max-width: 900px) {
+  .wrapper {
+    position: relative;
+  }
 }
